@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// Di Golang, deklarasi String di bungkus dengan tanda petik dua "..."
 	fmt.Println("Sintya")
 	
 	// len(): menghitung panjang karakter string
