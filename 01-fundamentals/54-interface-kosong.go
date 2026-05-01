@@ -16,7 +16,14 @@ func Ups() any {
 	return 0.5
 }
 
+func Ups2() interface{} {
+	return "Hai!"
+}
+
 func main() {
 	var kosong any = Ups()
 	fmt.Println(kosong)
+
+	var empty any = Ups2()
+	fmt.Println(empty)
 }
