@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	// Slice adalah tipe data yang merepresentasikan potongan dari array. 
-	// Berbeda dengan array, slice tidak memiliki panjang tetap sehingga ukurannya dapat berubah (dinamis).	
+	/**Slice 
+	 # adalah tipe data yang merepresentasikan potongan dari array. 
+	 # Berbeda dengan array, slice tidak memiliki panjang tetap sehingga ukurannya dapat berubah (dinamis).	
+	**/
 	fruits := [...]string{
 		"Banana",
 		"Mango",

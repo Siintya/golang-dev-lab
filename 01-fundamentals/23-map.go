@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// Map adalah tipe data lain yg berisi kumpulan data yg sama, namun bisa menentukan tipe data index yg akan digunakan
-	// Membuat map: map[typeData]typeData{"key": "value",}
+	/**Map adalah tipe data lain yg berisi kumpulan data yg sama, namun bisa menentukan tipe data index yg akan digunakan
+	Membuat map: map[typeData]typeData{"key": "value",}
+	**/
 	
 	// Cara 1 membuat map
 	// var person := map[string]string{}
