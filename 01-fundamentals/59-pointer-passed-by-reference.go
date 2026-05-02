@@ -14,6 +14,7 @@ import "fmt"
 type Address struct {
 	City, Province, Country 	string
 }
+
 func main() {
 	address1 := Address{"Bekasi", "Jawa Barat", "Indonesia"}
 	address2 := &address1 //pointer
