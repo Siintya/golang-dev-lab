@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-/** Package fmt
-https://pkg.go.dev/fmt@go1.26.2
-**/
+/**Package fmt-https://pkg.go.dev/fmt@go1.26.2**/
 func main() {
 	firstName 	:= "Sintya"
 	lastName 	:= "Lestari"
