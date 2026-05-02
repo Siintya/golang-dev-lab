@@ -17,4 +17,4 @@ Repositori ini berfungsi sebagai laboratorium pengembangan untuk mengeksplorasi 
 - [ ] Unit Test Go
 
 ## 🔗 Resources
-- [Golang Tutorial Video](https://youtu.be/IO_vkyJnMas?si=UZSPcoB_v6zV98EV)
+- [Programmer Zaman Now Golang Tutorial](https://youtu.be/IO_vkyJnMas?si=UZSPcoB_v6zV98EV)
