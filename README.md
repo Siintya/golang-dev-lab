@@ -11,10 +11,10 @@ Repositori ini berfungsi sebagai laboratorium pengembangan untuk mengeksplorasi 
 - **IDE:** VS Code 
 
 ## 🧪 Learning Roadmap
-- [x] Dasar-dasar Sintaksis Go
-- [ ] Implementasi Concurrency (Goroutines & Channels)
-- [ ] Integrasi Database & Arsitektur Backend
-- [ ] Deployment & Docker Orchestration
+- [x] Fundamentals Go
+- [x] Standart Library Go
+- [ ] Modules Go
+- [ ] Unit Test Go
 
 ## 🔗 Resources
 - [Golang Tutorial Video](https://youtu.be/IO_vkyJnMas?si=UZSPcoB_v6zV98EV)
