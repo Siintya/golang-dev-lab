@@ -6,11 +6,12 @@ import "fmt"
 https://pkg.go.dev/fmt@go1.26.2
 **/
 func main() {
-	fmt.Println("Hello, World!")
+	firstName 	:= "Sintya"
+	lastName 	:= "Lestari"
 
-	firstName := "Sintya"
-	lastName := "Lestari"
+	// Println -> print line
+	fmt.Println("Hello, '", firstName, lastName, "'!")
 
 	// Printf -> print format
-	fmt.Printf("Hello '%s %s'!\n", firstName, lastName)
+	fmt.Printf("Hello, '%s %s'!\n", firstName, lastName)
 }
