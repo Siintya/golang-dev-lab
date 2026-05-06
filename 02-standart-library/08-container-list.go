@@ -20,11 +20,14 @@ https://pkg.go.dev/container/list
 **/
 
 func main() {
-	// Cara menggunakan Doubly Linked List
+	// Membuat list baru
 	var data = list.New()
 
+	// Menambahkan elemen di belakang (Back)
 	data.PushBack("Ajeng")
-	data.PushBack("Sintya")
+	// Menambahkan elemen di depan (Front)
+	data.PushFront("Sintya")
+	// Menambahkan elemen di belakang lagi
 	data.PushBack("Lestari")
 
 	var head *list.Element = data.Front();
@@ -36,6 +39,8 @@ func main() {
 	next2 := next.Next()
 	fmt.Println(next2.Value)
 
+	// Iterasi dari depan ke belakang
+	fmt.Println("Isi List:")
 	for x := data.Front(); x != nil; x = x.Next() {
 		fmt.Println("Use Looping:", x.Value)
 	}
