@@ -7,7 +7,7 @@ import (
 
 /**Package flag 
 berisi fungsionalitas untuk memparsing command line argument
-
+https://pkg.go.dev/flag
 **/
 
 func main() {
