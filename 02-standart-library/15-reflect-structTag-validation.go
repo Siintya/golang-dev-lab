@@ -8,21 +8,8 @@ import (
 )
 
 /*
-*StructTag
-  - Fitur structTug adalah string opsional yang diletakkan
-    setelah tipe data dalam deklarasi field sebuah struct.
-  - Tag ini berfungsi sebagai metadata yang memberikan
-    instruksi tambahan kepada paket atau library
-    lain tentang cara memproses field tersebut.
-  - Cara penhulisanya: Tag ditulis di dalam
-    tanda backtick (`) dan biasanya mengikuti format key:"value".
-  - Kita akan sering menjumpai StructTag dalam skenario berikut:
-    >> Serialisasi Data (JSON, XML, YAML)
-    >> Pemetaan Database (ORM)
-    >> Validasi Input
-    >> Pemetaan Form Web
-
-*
+*StructTag - Validation Input
+Disini akan mengimplementasikan strctTag pada Validation input
 */
 type Sample struct {
 	Name string `required:"true" max:"10"`
@@ -46,8 +33,31 @@ func readField(value any) {
 	}
 }
 
+func IsValid(value interface{}) (result bool) {
+	result = true
+	t := reflect.TypeOf(value)
+
+	for i := 0; i < t.NumField(); i++ {
+		field := t.Field(i)
+		if field.Tag.Get("required") == "true" {
+			// validasi
+			data := reflect.ValueOf(value).Field(i).Interface()
+			result = data != ""
+			if result == false {
+				return result
+			}
+		}
+	}
+	return true
+}
+
 func main() {
 	// running
-	readField(Sample{"Sintya"})
-	readField(Person{"Sintya", "Bekasi", "test@gmail.com"})
+	person := Person{
+		Name:    "Sintya",
+		Address: "Bekasi",
+		Email:   "ada",
+	}
+
+	fmt.Println(IsValid(person)) // output: true
 }
