@@ -1,3 +1,5 @@
+//go:build ignore
+
 package main
 
 import (
@@ -5,7 +7,7 @@ import (
 	"strings"
 )
 
-/**Package Strings 
+/**Package Strings
 Package yg berisi function-function untuk memanipulasi tipe data String
 https://pkg.go.dev/strings
 **/
@@ -19,7 +21,7 @@ func main() {
 
 	// strings.ToUpper(string): membuat semua karakter string manjadi upper case
 	fmt.Println(strings.ToUpper("Sintya Lestari"))
-	
+
 	// strings.Split(string, separator): memotong string berdasarkan separator
 	fmt.Println(strings.Split("Sintya Lestari", " "))
 
@@ -30,6 +32,3 @@ func main() {
 	fmt.Println(strings.ReplaceAll("Sintttyaaa", "Sintttyaaa", "Lestari"))
 
 }
-
-
-

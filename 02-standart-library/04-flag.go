@@ -1,3 +1,5 @@
+//go:build ignore
+
 package main
 
 import (
@@ -5,7 +7,7 @@ import (
 	"fmt"
 )
 
-/**Package flag 
+/**Package flag
 berisi fungsionalitas untuk memparsing command line argument
 https://pkg.go.dev/flag
 **/
@@ -23,12 +25,9 @@ func main() {
 	fmt.Println("Host", *host)
 	fmt.Println("Port", *port)
 
-	/**Jika ingin mengganti  masukan parameter berikut ini, ketika 
+	/**Jika ingin mengganti  masukan parameter berikut ini, ketika
 	run file golang:
 	$ go run 04-flag.go -username=sintya -password=rahasia -host=123.123.123.3 -port=5505
 	**/
 
 }
-
-
-

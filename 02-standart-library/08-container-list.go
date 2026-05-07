@@ -1,3 +1,5 @@
+//go:build ignore
+
 package main
 
 import (
@@ -9,8 +11,8 @@ import (
 adalah implementasi struktur data Doubly linked list di golang
 
 Apa itu Doubly Linked List?
-* Berbeda dengan Array atau Slice yang menyimpan data dalam blok 
-  memori yg berurutan, Doubly Linked List menyimpan data dlm unit-unit 
+* Berbeda dengan Array atau Slice yang menyimpan data dalam blok
+  memori yg berurutan, Doubly Linked List menyimpan data dlm unit-unit
   terpisah yang disebut Node.
 * Setiap Node dalam Doubly Linked List memiliki tiga komponen utama:
 	- Value: Data yang disimpan (bisa berupa angka, string, atau objek).
@@ -30,7 +32,7 @@ func main() {
 	// Menambahkan elemen di belakang lagi
 	data.PushBack("Lestari")
 
-	var head *list.Element = data.Front();
+	var head *list.Element = data.Front()
 	fmt.Println(head.Value)
 
 	next := head.Next()
@@ -46,6 +48,3 @@ func main() {
 	}
 
 }
-
-
-

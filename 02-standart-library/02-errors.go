@@ -1,8 +1,10 @@
+//go:build ignore
+
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
 /**Package errors-https://pkg.go.dev/errors@go1.26.2**/
@@ -10,7 +12,7 @@ import (
 // #1 Create Error
 var (
 	ValidationError = errors.New("validation error")
-	NotFoundError 	= errors.New("not found error")
+	NotFoundError   = errors.New("not found error")
 )
 
 // #2 Use Error
@@ -31,7 +33,7 @@ func main() {
 	err := getByUsername("sintya88")
 
 	// errors.Is() -> mengecek jenis type errornya
-	if err != nil {	
+	if err != nil {
 		if errors.Is(err, ValidationError) {
 			fmt.Println("Validation ERROR!")
 		} else if errors.Is(err, NotFoundError) {

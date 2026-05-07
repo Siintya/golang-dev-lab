@@ -1,8 +1,10 @@
+//go:build ignore
+
 package main
 
 import (
-	"sort"
 	"fmt"
+	"sort"
 )
 
 /**Package sort
@@ -25,10 +27,11 @@ func SortData(data any) {
 		fmt.Println("Type data not supported for sorting!")
 	}
 }
+
 // 2. mengimplementasikan interface untuk tipe data yg lebih kompleks.
 type User struct {
-	Name 	string
-	Age 	int
+	Name string
+	Age  int
 }
 
 // menempelkan (attach) method yang dibutuhkan oleh interface sort.
@@ -69,7 +72,7 @@ func main() {
 	}
 
 	// melakukan konversi tipe dari []User ke UserSlice agar
-    // interface sort.Sort bisa mengenali method Len, Less, dan Swap.
+	// interface sort.Sort bisa mengenali method Len, Less, dan Swap.
 	sort.Sort(UserSlice(users))
 	fmt.Println(users) // Output: [{Dewi 20} {Tono 24} {Nana 26} {Rudi 27}]
 

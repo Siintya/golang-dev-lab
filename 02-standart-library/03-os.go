@@ -1,3 +1,5 @@
+//go:build ignore
+
 package main
 
 import (
@@ -6,7 +8,7 @@ import (
 )
 
 /**Package OS-https://pkg.go.dev/os@go1.26.2
-* Berisi fungsionalitas untuk mengakses fitur sistem operasi scr 
+* Berisi fungsionalitas untuk mengakses fitur sistem operasi scr
   independen (bisa digunakan disemua OS)
 * Args -> arguments
 **/

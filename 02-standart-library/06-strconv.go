@@ -1,8 +1,10 @@
+//go:build ignore
+
 package main
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 )
 
 /**Package strconv (String Conversions)
@@ -26,7 +28,6 @@ func main() {
 	} else {
 		fmt.Println("Error", err.Error())
 	}
-
 
 	// strconv.parseInt(string, base int, bitSize int): mengubah string ke int64
 	result3, err := strconv.ParseInt("14500", 16, 64)
@@ -57,6 +58,3 @@ func main() {
 	result7 := strconv.Itoa(90)
 	fmt.Printf("Itoa: %T, %v\n", result7, result7)
 }
-
-
-

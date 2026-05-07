@@ -1,9 +1,11 @@
+//go:build ignore
+
 package main
 
 import (
 	"container/ring"
-	"strconv"
 	"fmt"
+	"strconv"
 )
 
 /**Package container/ring
@@ -30,14 +32,11 @@ func main() {
 		fmt.Println(value)
 	})
 
-	// Membuktikan ini sirkular: 
+	// Membuktikan ini sirkular:
 	// Jika kita Next() 3 kali dari elemen 1, kita kembali ke elemen 1
 	node1 := myRing
 	node5 := myRing.Next().Next().Next().Next().Next()
-	
+
 	fmt.Println(node1 == node5) // Hasilnya: true
 
 }
-
-
-
