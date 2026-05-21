@@ -13,8 +13,8 @@ Repositori ini berfungsi sebagai laboratorium pengembangan untuk mengeksplorasi 
 ## 🧪 Learning Roadmap
 - [x] Fundamentals Go
 - [x] Standart Library Go
-- [ ] Modules Go
-- [ ] Unit Test Go
+- [x] Modules Go
+- [x] Unit Test Go
 
 ## 🔗 Resources
 - [Programmer Zaman Now Golang Tutorial](https://youtu.be/IO_vkyJnMas?si=UZSPcoB_v6zV98EV)
