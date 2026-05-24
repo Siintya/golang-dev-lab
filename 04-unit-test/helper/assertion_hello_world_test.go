@@ -11,6 +11,7 @@ import (
 func TestHelloWorldAssert(t *testing.T) {
 	result := HelloWorld("Sintya")
 
+	// Jika pengecekan gagal, akan memanggil Fail()
 	assert.Equal(t, "Hello Sintya", result, "Result must be 'Hello Sintya'")
 	/* Output jika error:
 	=== RUN   TestHelloWorldAssert
