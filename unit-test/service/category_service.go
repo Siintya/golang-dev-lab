@@ -1,0 +1,21 @@
+package service
+
+import (
+	"errors"
+	"unit-test/entity"
+	"unit-test/repository"
+)
+
+type CategoryService struct {
+	Repository repository.CategoryRepository
+}
+
+// Pengecekan
+func (service CategoryService) Get(id string) (*entity.Category, error) {
+	category := service.Repository.FindById(id)
+	if category == nil {
+		return nil, errors.New("Category Not Found")
+	} else {
+		return category, nil
+	}
+}
