@@ -18,8 +18,9 @@ func TestSubTest(t *testing.T) {
 		require.Equal(t, "Hello Sintya", result, "Result must be 'Hello Sintya'")
 	})
 
+	// Jika hanya ingin running test ini: $ go test -v -run=TestSubTest/Lestari
 	t.Run("Lestari", func(t *testing.T) {
 		result := HelloWorld("Lestari")
-		require.Equal(t, "Hello Lestari", result)
+		require.Equal(t, "Hello Lestari", result, "Result must be 'Hello Lestari'")
 	})
 }
