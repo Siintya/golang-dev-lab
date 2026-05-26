@@ -36,4 +36,21 @@ BenchmarkHelloWorldSub/Lestari-4                50109606                23.74 ns
 PASS
 Setelah Unit Test
 ok      unit-test/helper        2.439s
+===========================================
+
+$ go test -v -run=NotMathUnitTest -bench=BenchmarkHelloWorldSub/Sintya
+
+>> Output:
+Sebelum Unit Test
+goos: linux
+goarch: amd64
+pkg: unit-test/helper
+cpu: Intel(R) Celeron(R) N5095 @ 2.00GHz
+BenchmarkHelloWorldSub
+BenchmarkHelloWorldSub/Sintya
+BenchmarkHelloWorldSub/Sintya-4                 43564638                24.12 ns/op
+PASS
+Setelah Unit Test
+ok      unit-test/helper        1.100s
+
 */
